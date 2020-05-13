@@ -1,0 +1,55 @@
+Notes
+========
+
+This tool tries to generate automatically a program that finds the
+solutions of a system of equation given in the input.
+
+Note that compiling it requires flex (or lex) and bison (or yacc).
+
+
+It is typically invoked in the following way:
+
+./Resolution -e equations_file.txt -t [log_256 of the maximum attack complexity]
+
+Examples
+=========
+
+# finds an attack on 1 AES round, 1 known plaintext, complexity up to 2^(6*8)
+./Resolution -e equations/1r.txt -t 6
+
+# finds an attack on 1 AES round, 1 known plaintext, complexity up to 2^(4*8)
+./Resolution -e equations/1r.txt -t 4
+
+# disproves the existence of such attack with complexity 2^(3*8) or less
+./Resolution -e equations/1r.txt -t 3 -r 1
+
+# finds an attack on 2 AES rounds, 2 known plaintext, complexity up to 2^(4*8)
+./Resolution -e equations/2r_2KP.txt -t 4
+
+# finds an attack on 2 AES rounds, 1 known plaintext, complexity up to 2^(8*8)
+./Resolution -e equations/2r.txt -t 8
+
+# finds the state-recovery part of the attack on Pelican-MAC complexity up to 2^(3*8)
+./Resolution -e equations/pelican.txt -t 3
+
+# note that this may take a while
+
+More information
+==================
+
+The format of the equation files is fairly self-explanatory. Once an
+attack is found, the program will offer you to generate an XML file
+describing the attack in a not-very human-readable way. It will then
+offer you to generate C code for the attack, and lastly it will offer
+you to include a chunck of code that automatically generates a set of
+values of the parameters (plaintext/ciphertext,etc.) compatible with
+the equations.
+
+Note that the generated programs may require a 64-bit machine to be
+run.
+
+Contact us
+===========
+
+Questions may be sent to patrick.derbez@ens.fr or to
+charles.bouillaguet@ens.fr

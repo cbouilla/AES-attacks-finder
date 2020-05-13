@@ -1,0 +1,81 @@
+girofle  slots=8 
+aspilia  slots=16 
+raifort  slots=8 
+moutarde slots=8 
+
+# piment slots=2 
+# cumin  slots=3 
+
+#Oded Regev, Core i5
+jaunet  slots=4 
+
+#coin fenêtre, Core i5
+agrostis  slots=4
+
+#myriam, core i5
+truffe  slots=4
+
+#aurore, core i5
+grisette  slots=4 
+
+#inutilisée, core i5
+# ramaire  slots=4 
+
+#psilocybe patrick, core i5
+psilocybe  slots=1
+
+
+# Hieu, core i5
+melon  slots=4
+
+# dario, core i5
+lepiote  slots=4
+
+# Bruno, core i5
+agaric  slots=4
+
+# léo, core i5
+girolle  slots=4
+
+#moi, core 2
+psalliote slots=2
+
+#david cadé, core 2
+muscat slots=2 
+
+#mehdi, core 2
+morille slots=2
+
+#inutilisé, pentium D
+chanterelle slots=2 
+
+#jiquian, pentium D
+oronge slots=2 
+
+
+# basilic  slots=2 
+# botrytis  slots=2 
+# cajou  slots=2 
+# clavaire  slots=2
+
+
+
+#absinthe, ???, core 2 ----> pas installé
+#basilic, ???, core 2
+#botrytis, ???, core 2
+#cajou, ???, core 2
+#clavaire, ???, core 2
+
+#genievre, mine, core 2
+#lotus, yuanmi, core 2
+#aconit, bertrane, core 2
+#menthe, longo, core 2
+#mezcal, feret, core 2
+#mousse, Eric colin de Verdière, core 2
+#quassia, frezza, Athlon64 X2
+#cedre, bacha, core 2
+#fuschia, campores, Core 2
+
+
+# ubuntu@ec2-50-16-143-195.compute-1.amazonaws.com  slots=1 -wdir /home/ubuntu/charles_work/prog/aes_low_complexity ./main.opt -r 3
+#lactaire, ???,  pentium 4, 
