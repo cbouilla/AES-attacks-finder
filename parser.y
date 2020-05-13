@@ -119,7 +119,7 @@ variables_msg:   /* empty */
 					message_variables[n_messages] = res;
                                       };
 
-msg_packet: variables_msg NEWLINE MINUS NEWLINE {n_messages++}
+msg_packet: variables_msg NEWLINE MINUS NEWLINE {n_messages++;}
 
 
 msg_separation:  variables_msg NEWLINE 
